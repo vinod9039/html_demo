@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+               justify-content: center;
+               display: flex;
+               align-items: center;
+               background: url("https://images.unsplash.com/photo-1503264116251-35a269479413");
+               height: 100vh;
+        }
+
+      #mai-Container{
+            height: 300px;
+            width: 300px;
+             background-color: rgba(97, 219, 235, 0.5); /* cadetblue + transparency */
+              padding: 20px;  
+              color: rgb(226, 25, 25);        
+        }
+
+        .input{
+             text-align: center;
+             display: inline-block;
+             
+          }
+
+         .lable{
+            display: inline-block;
+         } 
+
+
+
+       
+    </style>
+</head>
+<body>
+    <div id="mai-Container">
+        <h1>Login</h1>
+        <div class="label"><label for="nm">Name</label></div>
+        <div class="input"><input type="text" id="nm" name="name" placeholder="Enter a name"></div>
+        <div class="label"><label for="ag">AGE</label></div>
+        <div class="input"><input type="text" id="dg" name="age" placeholder="Enter age"></div>
+        <div class="label"><button type="submit">Submit</button></div>
+    </div>
+</body>
+</html>
