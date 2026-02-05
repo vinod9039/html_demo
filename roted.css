@@ -1,0 +1,75 @@
+
+body{
+   /* display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;  */
+}
+
+.content{
+  width: 80px;
+  height: 80px;
+  background-color: aquamarine;
+  border-radius: 50%;
+  border: 10px solid red;
+  backdrop-filter: inherit;
+  position: relative;
+  display: flex;
+  cursor:not-allowed;
+  align-items: center;
+  justify-content: center;
+  animation: spin 5s linear infinite;
+ 
+ 
+}
+
+
+.content div{
+  position: absolute;
+  font-size: 14px;
+  animation: counterSpin 5s linear infinite;
+}
+
+img{
+  position: absolute;
+  animation: counterSpin 5s linear infinite;
+  border-radius: 50%;
+}
+
+#first-div{
+    top: 0;
+    right: 40%;
+}
+
+#second-div{
+  right: 38%;
+  bottom: 0;
+}
+
+#thrad-div{
+  left: 0;
+  top: 30px;
+}
+
+#forth-div{
+  right: 0;
+  top: 30px;
+}
+
+ @keyframes spin{
+  from{
+    transform: rotate(0deg);
+  }
+  to{
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes counterSpin{
+  from{
+    transform: rotate(0deg);
+  }
+  to{
+    transform: rotate(-360deg);
+  }
+} 
