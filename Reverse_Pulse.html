@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .pulse{
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            border: 2px solid rgb(86, 164, 86);
+            background: #9ac79a;
+            top: 50px;
+            left: 40%;
+            transform: translate(-505, -50%);
+            box-sizing: border-box ;
+            box-shadow: 0 0 0 36px crimson 0 0 0 40px cornflowerblue;
+            position: relative;
+            text-align: center;
+             display: flex;
+            justify-content: center;
+             align-items: center;
+             
+        }
+        
+       .pulse:before, .pulse:after { 
+			content: ''; 
+			position: absolute; 
+			left: -5px; 
+			top: -5px; 
+			right: -5px; 
+			bottom: -5px; 
+			border: 2px solid #236912; 
+			border-radius: 50%; 
+			animation: animate 2s linear infinite ;
+		} 
+        @keyframes animate { 
+			0% { 
+				transform: scale(2.0); 
+                border-color: rgb(199, 63, 25);
+			} 
+
+			100% { 
+				transform: scale(0.7); 
+			} 
+		}
+        
+        h1{
+            padding: 50px;
+            
+        }
+
+    </style>
+</head>
+<body>
+    <div class="pulse"> <h1>sagar</h1></div>
+</body>
+</html>
