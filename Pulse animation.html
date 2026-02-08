@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .element{
+            height: 250px;
+            width: 250px;
+            margin: 0 auto;
+            text-align: center;
+            background-color: lime;
+            animation-name: stretch;
+            animation-duration: 2.0s;
+            animation-timing-function: ease-out;
+            animation-direction: alternate;
+            animation-iteration-count:infinite;
+            animation-play-state:running;
+            
+            
+        }
+
+        body,html{
+            height: 100%;
+        }
+
+        @keyframes stretch {
+            0%{
+                transform: scale(.5);
+                background-color: darkgreen;
+                border-radius: 100%;
+            }
+            50%{
+                background-color: black;
+            }
+            100%{
+                transform: scale(2.0);
+                background-color: brown;
+            }
+            
+        }
+       
+        body{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: aquamarine;
+            background-color: lightsalmon;
+        }
+
+        
+    </style>
+</head>
+<body>
+    <div class="element">SAGAR</div>
+</body>
+</html>
