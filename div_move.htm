@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .containtr{
+            width: 100px;
+            height: 100px;
+            background-color: brown;
+            animation-name: savitri; 
+            position: relative;      
+            /* animation-duration: 4s; */
+            animation: savitri 20s linear infinite;
+           
+        }
+    
+       @keyframes savitri{
+        0%{
+            top: 0px;
+            left: 0px;
+            
+        }
+        25%{
+            top:0px;
+            left:90%;
+        }
+        50%{
+            top: 400px;
+            left: 90%;
+        }
+        75%{
+              top: 400px;
+              left:0px;
+        }
+        100%{
+            top: 0px;
+            left: 0px;
+        }
+       }
+
+    </style>
+</head>
+<body>
+    <div class="containtr"> Hello</div>
+</body>
+</html>
